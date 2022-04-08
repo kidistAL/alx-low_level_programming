@@ -1,20 +1,22 @@
 #include <stdio.h>
-
 /**
-* main - Print the alphabet in lowercase letters, except for e and q
-*
-* Return: Always 0 (Success)
-*/
+ * main - main block
+ * Description: Get a random number and check its last digit, compare it with 5
+ * Return: 0
+ */
 int main(void)
 {
-		char letter;
+	        char c = 'a';
 
-		for (letter = 'a'; letter <= 'z'; letter++)
+	        while (c <= 'z')
+	        {
+		if (c != 'e' && c != 'q')
 		{
-		if (letter != 'e' && letter != 'q')
-		putchar(letter);
+	        putchar(c);
 		}
-		putchar('\n');
+		c++;
+}
 
+	        putchar('\n');
 	return (0);
 }
