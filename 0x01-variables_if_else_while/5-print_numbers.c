@@ -1,22 +1,17 @@
 #include <stdio.h>
+
 /**
- *  * main - main block
- *   * Description: Get a random number and check its last digit, compare it with 5
- *    * Return: 0
- *     */
+* main - Print all single digit numbers
+*
+* Return: Always 0 (Success)
+*/
 int main(void)
 {
-	char c = 'a';
+	int digit;
 
-	while (c <= 'z')
-	{
-		if (c != 'e' && c != 'q')
-		{
-			putchar(c);
-		}
-		c++;
-	}
-
+	for (digit = 0; digit < 10; digit++)
+	printf("%i", digit);
 	putchar('\n');
+
 	return (0);
 }
