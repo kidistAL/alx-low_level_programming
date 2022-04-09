@@ -1,35 +1,25 @@
+#include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 /**
- * main - main block
- * Description: Get a random number and check its last digit, compare it with 5
- * Return: 0
+ * main- generate random number
+ *
+ * Return: return the value
+ * Description: description of the code
  */
 int main(void)
 {
-	char c = 'a';
-	char ch = 'A';
+	char alphabet, alpha;
 
-	while (c <= 'z')
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		if (c != '1' && c != '2')
-		{
-			putchar(c);
-			
-		}
-		c++;
-		
+		putchar (alphabet);
 	}
-	
-	while (ch <= 'Z')
+	for 
+		(alpha = 'A'; alpha <= 'Z'; alpha++)
 	{
-		if (ch != 'e' && ch != 'q')
-		{
-			putchar(ch);
-		}
-		ch++;
+		putchar (alpha);
 	}
-			
-
-	putchar('\n');
+	putchar ('\n');
 	return (0);
 }
