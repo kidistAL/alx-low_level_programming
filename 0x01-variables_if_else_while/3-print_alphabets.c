@@ -9,26 +9,26 @@ int main(void)
 	char c = 'a';
 	char ch = 'A';
 
-	while (c <= 'z' && ch <= 'Z')
+	while (c <= 'z')
 	{
 		if (c != '1' && c != '2')
 		{
 			putchar(c);
-			putchar(ch);
+			
 		}
 		c++;
+		
+	}
+	
+	while (ch <= 'Z')
+	{
+		if (ch != 'e' && ch != 'q')
+		{
+			putchar(ch);
+		}
 		ch++;
 	}
-	/*
-			*while (ch <= 'Z')
-			*{
-				*if (ch != 'e' && ch != 'q')
-				*{
-				*	putchar(ch);
-				*}
-				*ch++;
-			}
-			*/
+			
 
 	putchar('\n');
 	return (0);
