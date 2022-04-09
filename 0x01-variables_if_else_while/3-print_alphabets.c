@@ -18,14 +18,14 @@ int main(void)
 		c++;
 	}
 	
-		while (ch <= 'Z')
-		{
-			if (ch != 'e' && ch != 'q')
+			while (ch <= 'Z')
 			{
-				putchar(ch);
+				if (ch != 'e' && ch != 'q')
+				{
+					putchar(ch);
+				}
+				ch++;
 			}
-			ch++;
-		}
 
 	putchar('\n');
 	return (0);
